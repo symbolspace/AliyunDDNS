@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>module.AliyunDDNS</name>
+    </assembly>
+    <members>
+        <member name="T:module.AliyunDDNS.DomainIPSyncService">
+            <summary>
+            domain ip sync service.
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainIPSyncService.Config">
+            <summary>
+            get config object.
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainIPSyncService.Log">
+            <summary>
+            get or set log object.
+            </summary>
+        </member>
+        <member name="M:module.AliyunDDNS.DomainIPSyncService.#ctor">
+            <summary>
+            ctor("~/aliyun.ddns.config.json")
+            </summary>
+        </member>
+        <member name="M:module.AliyunDDNS.DomainIPSyncService.#ctor(FastObject)">
+            <summary>
+            ctor(config)
+            </summary>
+            <param name="config">config object, FastObject instance</param>
+        </member>
+        <member name="M:module.AliyunDDNS.DomainIPSyncService.#ctor(module.AliyunDDNS.Config)">
+            <summary>
+            ctor(config)
+            </summary>
+            <param name="config">config object, FastObject instance</param>
+        </member>
+        <member name="M:module.AliyunDDNS.DomainIPSyncService.Start">
+            <summary>
+            start task.
+            </summary>
+        </member>
+        <member name="M:module.AliyunDDNS.DomainIPSyncService.Stop">
+            <summary>
+            stop task.
+            </summary>
+        </member>
+        <member name="T:module.AliyunDDNS.Config">
+            <summary>
+            config
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.Config.interval">
+            <summary>
+            check interval, seconds, default 10
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.Config.showIPUrl">
+            <summary>
+            show public ip url
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.Config.accessKeys">
+            <summary>
+            accessKey map
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.Config.domains">
+            <summary>
+            domain map
+            </summary>
+        </member>
+        <member name="T:module.AliyunDDNS.DomainInfo">
+            <summary>
+            domain info
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainInfo.domain">
+            <summary>
+            domain
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainInfo.provider">
+            <summary>
+            dns provider, fixed value 'aliyun'
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainInfo.accessKey">
+            <summary>
+            accessKey info
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.DomainInfo.items">
+            <summary>
+            sub domain list
+            </summary>
+        </member>
+        <member name="T:module.AliyunDDNS.SubDomainInfo">
+            <summary>
+            sub domain info
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.SubDomainInfo.type">
+            <summary>
+            record type, fixed value : 'A'
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.SubDomainInfo.name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.SubDomainInfo.ttl">
+            <summary>
+            record ttl, default 100
+            </summary>
+        </member>
+        <member name="T:module.AliyunDDNS.AccessKeyInfo">
+            <summary>
+            accessKey info
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.AccessKeyInfo.accessKeyId">
+            <summary>
+            accessKey id
+            </summary>
+        </member>
+        <member name="P:module.AliyunDDNS.AccessKeyInfo.accessKeySecret">
+            <summary>
+            accessKey secret
+            </summary>
+        </member>
+    </members>
+</doc>
