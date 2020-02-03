@@ -1,0 +1,15 @@
+---
+
+version: '3'
+
+services:
+  aliyunDDNS-server:
+    image: symbolspace/aliyunDDNS
+    container_name: aliyunDDNS-server
+    hostname: aliyunDDNS-server
+    restart: always
+    network_mode: "none"
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - ./../data/aliyun.ddns.config.json:/app/aliyun.ddns.config.json
