@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{37A65BB8-9951-44B1-A6DE-3A3AB0E7C559}"
+	ProjectSection(SolutionItems) = preProject
+		docker\build\README.md = docker\build\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D95E0197-6579-4919-A268-5C513F17D8CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliyunDDNS", "src\AliyunDDNS\AliyunDDNS.csproj", "{FA707BEB-6D63-41AD-81F9-D66B50928458}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".git", ".git", "{5D3DC522-84BB-4771-97FC-65A4F266D3A1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "module.AliyunDDNS", "src\module.AliyunDDNS\module.AliyunDDNS.csproj", "{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA707BEB-6D63-41AD-81F9-D66B50928458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA707BEB-6D63-41AD-81F9-D66B50928458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA707BEB-6D63-41AD-81F9-D66B50928458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA707BEB-6D63-41AD-81F9-D66B50928458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA707BEB-6D63-41AD-81F9-D66B50928458} = {D95E0197-6579-4919-A268-5C513F17D8CB}
+		{F71D3F9B-52E2-4B14-A73E-07A8656FBEC2} = {D95E0197-6579-4919-A268-5C513F17D8CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A3D5577-8532-4114-ABAB-97E9575AAE2D}
+	EndGlobalSection
+EndGlobal
