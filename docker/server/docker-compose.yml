@@ -3,10 +3,10 @@
 version: '3'
 
 services:
-  aliyunDDNS-server:
-    image: symbolspace/aliyunDDNS
-    container_name: aliyunDDNS-server
-    hostname: aliyunDDNS-server
+  aliyun-ddns:
+    image: symbolspace/aliyun-ddns
+    container_name: aliyun-ddns
+    hostname: aliyun-ddns
     restart: always
     network_mode: "none"
     environment:

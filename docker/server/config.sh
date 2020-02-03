@@ -1,1 +1,1 @@
-project_name=aliyunDDNS
+project_name=aliyun-ddns
