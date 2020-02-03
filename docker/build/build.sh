@@ -1,0 +1,1 @@
+docker build -t symbolspace/aliyun-ddns ./files

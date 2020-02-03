@@ -3,7 +3,7 @@
 
 * build shell code
 ```shell
-docker build -t symbolspace/AliyunDDNS ./files
+docker build -t symbolspace/aliyun-ddns ./files
 ```
 * build shell script
 ```shell
