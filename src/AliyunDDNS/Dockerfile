@@ -11,4 +11,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 VOLUME /app
 
-ENTRYPOINT ["dotnet", "AliyunDDNS.exe"]
+ENTRYPOINT ["dotnet", "AliyunDDNS.dll"]
