@@ -20,7 +20,7 @@ namespace AliyunDDNS {
             // start task
             ddns.Start();
             log.Info("    console readkey ...");
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }
