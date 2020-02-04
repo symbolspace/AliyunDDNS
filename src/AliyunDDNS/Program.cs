@@ -16,8 +16,12 @@ namespace AliyunDDNS
                     configFile = "~/aliyun.ddns.config.json";
                 log.Info($"   config:{configFile}");
                 log.Info("");
+                string json = AppHelper.LoadTextFile(configFile, System.Text.Encoding.UTF8);
+                log.Info(json);
+                var config = JSON.ToObject<module.AliyunDDNS.Config>(json, true);
+                log.Info(JSON.ToNiceJSON(config));
 
-                var ddns = new module.AliyunDDNS.DomainIPSyncService(configFile);
+                var ddns = new module.AliyunDDNS.DomainIPSyncService(config);
                 // set log 
                 ddns.Log = log;
                 // start task
