@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/runtime:3.0
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 MAINTAINER symbolspace<symbolspace@outlook.com>
 
 LABEL description="AliyunDDNS"
