@@ -16,7 +16,7 @@
     "warningsAsErrors": false,
     "optimize": true,
     "keyFile": "",
-    "emitEntryPoint": false,
+    "emitEntryPoint": true,
     "xmlDoc": false,
     "debugType": "portable"
   },
