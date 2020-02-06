@@ -31,7 +31,7 @@ namespace module.AliyunDDNS {
                 DomainName = domain,
             };
             var response = AddDomainRecord(request);
-            Console.WriteLine($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
+            //Console.WriteLine($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
             return response != null && response.HttpResponse.Status == 200;
         }
         public bool ModifyA(string domain, string name, string ip) {
@@ -62,7 +62,7 @@ namespace module.AliyunDDNS {
             if (request.Priority == null)
                 request.Priority = 1;
             var response = UpdateDomainRecord(request);
-            Console.WriteLine($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
+            //Console.WriteLine($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
             return response != null && response.HttpResponse.Status == 200;
         }
         #endregion
