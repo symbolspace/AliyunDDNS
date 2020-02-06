@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.0": {
       "AliyunDDNS/1.0.0": {
         "dependencies": {
-          "module.AliyunDDNS": "1.0.0.1",
+          "module.AliyunDDNS": "1.0.0.2",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -315,15 +315,15 @@
           "AliyunDDNS.dll": {}
         }
       },
-      "aliyun-net-sdk-alidns/2.0.14": {
+      "aliyun-net-sdk-alidns/2.0.15": {
         "dependencies": {
           "Newtonsoft.Json": "9.0.1",
           "aliyun-net-sdk-core": "1.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/aliyun-net-sdk-alidns.dll": {
-            "assemblyVersion": "2.0.14.0",
-            "fileVersion": "2.0.14.0"
+            "assemblyVersion": "2.0.15.0",
+            "fileVersion": "2.0.15.0"
           }
         },
         "compile": {
@@ -738,11 +738,11 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "module.AliyunDDNS/1.0.0.1": {
+      "module.AliyunDDNS/1.0.0.2": {
         "dependencies": {
           "Symbol": "4.0.0.13",
           "Symbol.Net": "4.0.0.5",
-          "aliyun-net-sdk-alidns": "2.0.14",
+          "aliyun-net-sdk-alidns": "2.0.15",
           "aliyun-net-sdk-core": "1.5.3"
         },
         "runtime": {
@@ -2452,12 +2452,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "aliyun-net-sdk-alidns/2.0.14": {
+    "aliyun-net-sdk-alidns/2.0.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kevHE9e8Y6qeA9Cl9NyVk9v8ekv2+c9oPaU62b3gEZXY8iwMIaPbV3fvNc6Ac7AOE7uN+dP86wgzxPXr5nZXUA==",
-      "path": "aliyun-net-sdk-alidns/2.0.14",
-      "hashPath": "aliyun-net-sdk-alidns.2.0.14.nupkg.sha512"
+      "sha512": "sha512-pZkBVu48nRV3pagx//9TKYvtTfuKC04G5z2UUY9bLRcC9pRgerpBZQhOp23Qg38TuW43xO5itiEJU0rufkq+MA==",
+      "path": "aliyun-net-sdk-alidns/2.0.15",
+      "hashPath": "aliyun-net-sdk-alidns.2.0.15.nupkg.sha512"
     },
     "aliyun-net-sdk-core/1.5.3": {
       "type": "package",
@@ -2753,7 +2753,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "module.AliyunDDNS/1.0.0.1": {
+    "module.AliyunDDNS/1.0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
