@@ -87,6 +87,7 @@ namespace module.AliyunDDNS {
             } catch (Exception error) {
                 Log?.Error(error);
             } finally {
+                GC.Collect();
                 _timer?.Start();
             }
         }
