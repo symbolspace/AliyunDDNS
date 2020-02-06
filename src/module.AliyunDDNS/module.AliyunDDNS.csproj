@@ -12,7 +12,7 @@
     <NeutralLanguage>zh-CN</NeutralLanguage>
     <AssemblyTitle>module.AliyunDDNS</AssemblyTitle>
     <AssemblyName>module.AliyunDDNS</AssemblyName>
-    <VersionPrefix>1.0.0.1</VersionPrefix>
+    <VersionPrefix>1.0.0.2</VersionPrefix>
     <Title>module.AliyunDDNS</Title>
     <Authors>symbolspace</Authors>
     <Company>symbolspace</Company>
@@ -153,38 +153,38 @@ System.Console.ReadLine();
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net47'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net46'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
     <PackageReference Include="aliyun-net-sdk-alidns">
-      <Version>2.0.14</Version>
+      <Version>2.0.15</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
