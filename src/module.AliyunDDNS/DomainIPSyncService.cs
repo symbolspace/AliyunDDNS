@@ -78,18 +78,13 @@ namespace module.AliyunDDNS {
             _timer.AutoReset = true;
             _timer.Elapsed += _timer_Elapsed;
             _timer.Start();
+            if (interval > 20) {
+                ThreadHelper.Delay(1000, DoWork);
+            }
         }
 
         void _timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
-            _timer?.Stop();
-            try {
-                DoWork();
-            } catch (Exception error) {
-                Log?.Error(error);
-            } finally {
-                GC.Collect();
-                _timer?.Start();
-            }
+            DoWork();
         }
         #endregion
 
@@ -109,6 +104,17 @@ namespace module.AliyunDDNS {
 
         #region DoWork
         void DoWork() {
+            _timer?.Stop();
+            try {
+                DoWork();
+            } catch (Exception error) {
+                Log?.Error(error);
+            } finally {
+                GC.Collect();
+                _timer?.Start();
+            }
+        }
+        void DoWorkBody() {
             Log?.Info("work begin ...");
             string publicIP = GetPublicIP();
             if (string.IsNullOrEmpty(publicIP)) {
