@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Label="NuGet">
-    <TargetFrameworks>netcoreapp3.0;netstandard2.0;netcoreapp2.0;net47;net461;net46;net45;</TargetFrameworks>
+    <TargetFrameworks>net5;netcoreapp3.1;netcoreapp3.0;netstandard2.0;netcoreapp2.0;net47;net461;net46;net45;</TargetFrameworks>
     <IsPackable>true</IsPackable>
     <IncludeSymbols>true</IncludeSymbols>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -12,7 +12,7 @@
     <NeutralLanguage>zh-CN</NeutralLanguage>
     <AssemblyTitle>module.AliyunDDNS</AssemblyTitle>
     <AssemblyName>module.AliyunDDNS</AssemblyName>
-    <VersionPrefix>1.0.0.3</VersionPrefix>
+    <VersionPrefix>1.0.0.4</VersionPrefix>
     <Title>module.AliyunDDNS</Title>
     <Authors>symbolspace</Authors>
     <Company>symbolspace</Company>
@@ -94,6 +94,12 @@ System.Console.ReadLine();
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5'">
+    <DefineConstants>net50;netcore;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)'=='netcoreapp3.1'">
+    <DefineConstants>netapp31;netcore;</DefineConstants>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='netcoreapp3.0'">
     <DefineConstants>netapp30;netcore;</DefineConstants>
   </PropertyGroup>
@@ -151,6 +157,16 @@ System.Console.ReadLine();
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
   </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)' == 'net5'">
+    <PackageReference Include="aliyun-net-sdk-alidns">
+      <Version>2.0.15</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <PackageReference Include="aliyun-net-sdk-alidns">
+      <Version>2.0.15</Version>
+    </PackageReference>
+  </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
     <PackageReference Include="aliyun-net-sdk-alidns">
       <Version>2.0.15</Version>

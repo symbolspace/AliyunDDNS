@@ -1,5 +1,5 @@
 # AliyunDDNS
- aliyun dynamic DNS, dotnet core 3.0, run at docker
+ aliyun dynamic DNS, dotnet 5.0, run at docker
 
 # docker
 * ~/aliyun.ddns.config.json
