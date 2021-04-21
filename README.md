@@ -1,6 +1,17 @@
 # AliyunDDNS
  aliyun dynamic DNS, dotnet 5.0, run at docker
 
+* build shell code
+```shell
+cd docker/build
+docker build -t symbolspace/aliyun-ddns ./files
+```
+* build shell script
+```shell
+cd docker/build
+chmod +x build.sh && ./build.sh
+```
+
 # docker
 * ~/aliyun.ddns.config.json
 ```json
