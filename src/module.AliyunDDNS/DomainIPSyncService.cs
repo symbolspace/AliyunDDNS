@@ -157,6 +157,7 @@ namespace module.AliyunDDNS {
                 result = new AliyunDNS(accessKeyInfo.accessKeyId, accessKeyInfo.accessKeySecret);
                 _list_dns[accessKey] = result;
             }
+            result.Log = Log;
             return result;
         }
 

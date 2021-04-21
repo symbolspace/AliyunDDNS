@@ -4,6 +4,11 @@
         <name>module.AliyunDDNS</name>
     </assembly>
     <members>
+        <member name="P:module.AliyunDDNS.AliyunDNS.Log">
+            <summary>
+            get or set log object.
+            </summary>
+        </member>
         <member name="T:module.AliyunDDNS.DomainIPSyncService">
             <summary>
             domain ip sync service.

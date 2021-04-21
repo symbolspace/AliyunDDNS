@@ -5,6 +5,17 @@ namespace module.AliyunDDNS {
     class AliyunDNS {
         #region fields
         private Aliyun.Acs.Core.IAcsClient _client;
+        private ILog _log;
+        #endregion
+
+        #region properites
+        /// <summary>
+        /// get or set log object.
+        /// </summary>
+        public ILog Log {
+            get { return _log ?? LogBase.Empty; }
+            set { _log = value; }
+        }
         #endregion
 
         #region ctor
@@ -61,7 +72,7 @@ namespace module.AliyunDDNS {
             if (request.Priority == null)
                 request.Priority = 1;
             var response = UpdateDomainRecord(request);
-            Console.WriteLine($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
+            Log?.Info($"        =>{response?.HttpResponse.Status}   recordId={response?.RecordId}");
             return response != null && response.HttpResponse.Status == 200;
         }
         #endregion
