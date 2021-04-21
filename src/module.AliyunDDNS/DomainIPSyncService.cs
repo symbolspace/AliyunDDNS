@@ -106,7 +106,7 @@ namespace module.AliyunDDNS {
         void DoWork() {
             _timer?.Stop();
             try {
-                DoWork();
+                DoWorkBody();
             } catch (Exception error) {
                 Log?.Error(error);
             } finally {
