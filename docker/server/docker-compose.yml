@@ -8,8 +8,7 @@ services:
     container_name: aliyun-ddns
     hostname: aliyun-ddns
     restart: always
-    # outbound requests only
-    network_mode: "host"
+    network_mode: "bridge"
     environment:
       TZ: "Asia/Shanghai"
     volumes:
