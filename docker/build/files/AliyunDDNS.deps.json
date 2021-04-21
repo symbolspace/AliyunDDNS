@@ -31,7 +31,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "AliyunDDNS/1.0.0.6": {
+      "AliyunDDNS/1.0.0.7": {
         "dependencies": {
           "module.AliyunDDNS": "1.0.0.4",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -2459,7 +2459,7 @@
     }
   },
   "libraries": {
-    "AliyunDDNS/1.0.0.6": {
+    "AliyunDDNS/1.0.0.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

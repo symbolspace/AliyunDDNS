@@ -7,7 +7,7 @@
     <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
     <!--<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>-->
-    <VersionPrefix>1.0.0.6</VersionPrefix>
+    <VersionPrefix>1.0.0.7</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
